@@ -48,4 +48,14 @@ public class Task {
         return Objects.equals(project, task.project) && Objects.equals(description, task.description);
     }
 
+    @Override
+    public String toString() {
+        return "Task{" +
+                "project='" + project + '\'' +
+                ", description='" + description + '\'' +
+                ", assignee='" + assignee + '\'' +
+                ", priority=" + priority +
+                ", status=" + status +
+                '}';
+    }
 }
